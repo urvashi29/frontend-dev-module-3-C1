@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+      </section>
+
+      <!-- 
+      <section>
+        <div>
+
+        </div>
+
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+      </section> -->
+
+      <section class="flex-container">
+        <div style="order: 2; flex-grow: 1">1</div>
+        <div style="order: 1; flex-grow: 1">2</div>
+        <div style="order: 4; flex-grow: 8">3</div>
+        <div style="order: 3; flex-grow: 8">4</div>
+      </section>
+
+      <section class="flex-container">
+        <div>1</div>
+        <div style="flex-shrink: 4; background-color: red">2</div>
+        <!-- flex: grow shrink -->
+        <div style="flex: 3 0">3</div>
+        <div>4</div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

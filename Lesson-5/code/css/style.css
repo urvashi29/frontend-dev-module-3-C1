@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#back {
+  height: 400px;
+  background-color: yellow;
+
+  background-image: url("../images/download.png");
+
+  /* no-repeat | repeat-x | repeat-y*/
+  background-repeat: no-repeat;
+
+  /* right top | right bottom | left bottom | center top | center bottom | center   */
+  background-position: center;
+
+  background-attachment: fixed;
+
+  /* width height */
+  background-size: cover;
+}
+
+/* descandant ( space ) */
+/* li will be selected */
+.items li {
+  color: orange;
+}
+
+.items > p {
+  color: blue;
+}
+
+/* child selector select the direct ( > ) */
+.items > li {
+  background-color: aquamarine;
+}
+
+/* general sibling selector (~) */
+.items ~ p {
+  color: blueviolet;
+}
+
+#back ~ p {
+  color: aquamarine;
+  display: inline;
+}
+
+/* adjacent sibling selector (+) */
+.items + h2 {
+  color: brown;
+}
+
+#sample {
+  color: red;
+}
+
+.test {
+  color: blue;
+}
+
+h4 {
+  color: orange;
+}
+
+#display span {
+  /* display: block; */
+  display: inline-block;
+  padding: 10px;
+}
+
+/* flex */
+.container {
+  height: 400px;
+  background-color: aqua;
+
+  display: flex;
+  /* row-reverse | column  */
+  flex-direction: row;
+
+  /* horizontal alignment */
+  /* left | center | right | space-between | space-around | space-evenly */
+  justify-content: space-around;
+
+  /* vertical alignment */
+  /* start | end | center */
+  align-items: center;
+  align-content: space-evenly;
+
+  /* nowrap */
+  flex-wrap: wrap;
+}
+
+.container > div {
+  background-color: yellow;
+  width: 30%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-container > div {
+  background-color: yellow;
+  border: 1px solid black;
+  width: 30%;
+}
