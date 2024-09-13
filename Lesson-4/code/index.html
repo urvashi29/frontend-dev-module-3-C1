@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- internal css -->
+    <style>
+      /* universal selector (*) : select all the elements */
+      * {
+        font-size: 20px;
+      }
+
+      /* element selector */
+      p {
+        color: wheat;
+        /* background-color: palevioletred; */
+      }
+
+      /* id selector (#) */
+      #sample {
+        color: blue;
+      }
+
+      /* class selector */
+      .text {
+        color: aquamarine;
+        /* background-color: palevioletred; */
+      }
+
+      /* group selector (,) */
+      p,
+      .text {
+        background-color: palevioletred;
+      }
+    </style>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, modi?
+    </p>
+
+    <p id="sample">Lorem, ipsum.</p>
+
+    <div class="text">Almabetter</div>
+    <div class="text">Almabetter</div>
+  </body>
+</html>
+
+<!-- Emailers - internal css -->

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/facebook.png" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <form method="post" action="./submit.html" target="_blank">
+          <label for="name">Enter Name</label>
+          <input
+            type="text"
+            placeholder="Enter FullName"
+            name="name"
+            value=""
+            required
+          />
+
+          <label for="age">Enter Age</label>
+          <input
+            type="number"
+            placeholder="Enter FullName"
+            name="age"
+            value=""
+            disabled
+          />
+
+          <!-- radio button-> create a quiz -->
+          <input type="radio" name="gender" value="male" />
+          <label>M</label>
+
+          <input type="radio" name="gender" value="female" />
+          <label>F</label>
+
+          <!-- date & time -->
+          <input type="date" name="date" />
+
+          <input type="time" name="time" />
+
+          <!-- range -->
+          <input type="range" name="price" min="0" max="50" />
+
+          <!-- file -->
+          <input type="file" name="resume" multiple />
+
+          <!-- checkbox -->
+          <input type="checkbox" name="agree" />
+
+          <!-- email -->
+          <input type="email" name="email" placeholder="Enter Email" />
+
+          <!-- password -->
+          <input type="password" name="pwd" placeholder="Enter Password" />
+
+          <!-- dropdown -->
+          <label for="country">Select Country</label>
+
+          <select name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+          </select>
+
+          <textarea name="about" rows="10" cols="20">
+Enter about yourself</textarea
+          >
+
+          <button type="submit">Submit</button>
+          <!-- <button type="reset">Rest</button> -->
+
+          <input type="reset" />
+        </form>
+      </section>
+
+      <!-- iframe: embedding another website in our website -->
+      <iframe
+        width="400px"
+        height="400px"
+        title="sample"
+        src="https://file-examples.com/index.php/sample-video-files/"
+      ></iframe>
+
+      <!-- iframe to embed youtube videos -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/tbnzAVRZ9Xc?si=_QYgi4pcSNQk2FYk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <!-- embed google  -->
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

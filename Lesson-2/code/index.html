@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+
+    <nav>
+      <!-- external linking -->
+      <!-- a -> anchor tag -->
+      <!-- target = "_self" by default -->
+      <a href="./home.html" target="_blank">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Technologies</h2>
+        <!-- ul -> unordered list
+         li -> list item -->
+
+        <!-- by default list marker is disc
+          type="disc" | "circle" | "square" | none -->
+        <ul type="square">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>
+
+        <!-- ol -> ordered list 
+         by default: list marker is "1"
+         type="i" | "I" | "a" | "A" -->
+        <ol type="a" start="4" reversed>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ol>
+
+        <!-- Nesting of list
+         nested list always added in some <li> -->
+        <ul>
+          <li>We group related data into list on web browser.</li>
+          <li>
+            There are three types of list:
+            <ol>
+              <li>Unordered list</li>
+              <li>Ordered list</li>
+              <li>description list</li>
+            </ol>
+          </li>
+        </ul>
+
+        <!-- dl -> description list 
+         dt -> definition term
+         dd -> definition description -->
+        <dl>
+          <dt>HTML</dt>
+          <dd>is used to structure website.</dd>
+
+          <dt>CSS</dt>
+          <dd>is used to style website.</dd>
+        </dl>
+      </section>
+
+      <section>
+        <button type="submit" disabled>Login</button>
+        <button type="button">Add to Cart</button>
+
+        <!-- dropdown -->
+        <select>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+          <option value="india">India</option>
+        </select>
+      </section>
+    </main>
+
+    <footer>
+      <a href="http://www.facebook.com" target="_blank">
+        <img src="./images/facebook.png" alt="facebook" />
+      </a>
+    </footer>
+  </body>
+</html>
+
+<!-- Block elements: start from a new line and takes 100% width e.g: p, heading, list, div, semantic  
+Inline Elements: which stays in the same line e.g. span, img, a -->
+
+<!-- dropdown -->

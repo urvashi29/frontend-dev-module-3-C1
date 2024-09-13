@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Matemasie&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#sample {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+
+  padding: 10px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.style-background {
+  height: 400px;
+  /* width: 200px; */
+  border: 2px solid orange;
+
+  color: white;
+  background-color: aquamarine;
+
+  background-image: url("../images/download.png");
+  /* 
+  by default: repeat 
+  repreat-y  repreat-x */
+  background-repeat: no-repeat;
+
+  /* by default: left top
+  right top | right bottom | left bottom  */
+  background-position: center;
+
+  background-attachment: fixed;
+
+  /* property shorthand */
+  /* background: green url("../images/facebook.png") no-repeat right top fixed; */
+}
+
+#text {
+  color: brown;
+  font-size: 18px;
+
+  /* by default: lighter */
+  font-weight: bold;
+
+  /* uppercase, lowercase, capitalize */
+  text-transform: uppercase;
+
+  /* bt default: none | overline, line-through, underline */
+  text-decoration: line-through;
+
+  /* work only on block level elements, it align content horizontally*/
+  text-align: center;
+
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 2;
+
+  font-style: italic;
+  font-family: "Matemasie", sans-serif;
+}
+

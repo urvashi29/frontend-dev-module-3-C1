@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <form method="get" target="_blank" action="./submit.html">
+          <label for="name">Enter Name</label>
+          <input type="text" placeholder="Enter name" name="name" required />
+
+          <label for="email">Enter Email*</label>
+          <input
+            type="email"
+            placeholder="Please enter email"
+            name="email"
+            required
+          />
+
+          <label for="pwd">Enter Password</label>
+          <input
+            type="password"
+            placeholder="Please enter password"
+            name="pwd"
+            disabled
+          />
+
+          <label for="tel">Enter Contact</label>
+          <input
+            type="number"
+            placeholder="Please enter contact"
+            name="tel"
+            value="9999999"
+            maxlength="10"
+            minlength="2"
+          />
+
+          <label for="dob">Enter DOB</label>
+          <input type="date" name="dob" />
+
+          <label for="time">Enter Time</label>
+          <input type="time" name="time" />
+
+          <label for="resume">Select Resume</label>
+          <input type="file" name="resume" multiple />
+
+          <!-- radio button -->
+          <label>Select Gender</label>
+          <input type="radio" name="genderm" />
+          <label for="genderm">Male</label>
+
+          <input type="radio" name="genderf" />
+          <label for="genderf">Female</label>
+
+          <!-- color -->
+          <label for="fav">Select favorite Color</label>
+          <input type="color" name="fav" />
+
+          <!-- dropdown -->
+          <label for="country">Select Country</label>
+          <select name="country">
+            <option value="australia">Australia</option>
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+          </select>
+
+          <label for="about"></label>
+          <textarea name="about" rows="20" cols="20">
+ Introduce Yourself </textarea
+          >
+
+          <input type="reset" />
+          <button type="submit">Submit</button>
+
+          <p>All * fields are mandatory.</p>
+        </form>
+      </section>
+
+      <section>
+        <iframe
+          src="https://file-examples.com/index.php/sample-video-files/"
+          width="400px"
+          height="400px"
+        ></iframe>
+
+        <!-- youtube video  -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/eBSeCp__xhI?si=19C3fFaHoHAjipy_"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <!-- google maps -->
+        <iframe src=""></iframe>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
