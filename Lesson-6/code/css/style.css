@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#static {
+  height: 100px;
+  width: 100px;
+  background-color: rgba(255, 9, 255, 0.3);
+  border: 1px solid black;
+
+  /* by default, all the html elements have position: static */
+  /* position: static; */
+  margin: 10px;
+}
+
+#relative {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(33, 22, 25);
+
+  position: relative;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  bottom: 10px;
+}
+
+#absolute {
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+
+  /* to add transparency */
+  opacity: 0.5;
+}
+
+.sticky {
+  background-color: yellow;
+  height: 50px;
+
+  position: sticky;
+  top: 0;
+}
+
+#fixed {
+  height: 50px;
+  background-color: olive;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#transition {
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+
+  /* time in which transition will take place */
+  transition-duration: 2s;
+
+  /* start slow & speed up */
+  /* ease-out start speed & slow end
+  linear: constant/same speed */
+  transition-timing-function: ease-in;
+  transition-delay: 2s;
+  transition-property: width;
+
+  /* shorthand */
+  transition: width 2s linear 1s, border-radius 1s ease-in 2s,
+    background-color 1s ease-out 1s;
+}
+
+/* pseudo class: user hover over that element */
+#transition:hover {
+  width: 200px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+#transform {
+  width: 100px;
+  height: 100px;
+  background-color: palegreen;
+  border: 1px solid black;
+
+  /* x-axis, y-axis */
+  transform: translate(50px, 100px);
+
+  transform: rotate(20deg);
+
+  transform: scale(3, 4);
+  transform: scaleX(3);
+  transform: scaleY(4);
+
+  transform: skew(20deg, 10deg);
+
+  transform: skewX(10deg);
+  transform: skewY(20deg);
+}
+
+.example {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  transition: transform 2s linear 1s;
+}
+
+.example:hover {
+  transform: scale(1.5, 1.5);
+}
+
+#animate {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: yellowgreen;
+
+  /* give custom name */
+  animation-name: animate;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes animate {
+  0% {
+    background-color: yellow;
+  }
+
+  25% {
+    background-color: yellowgreen;
+  }
+
+  50% {
+    background-color: aquamarine;
+  }
+
+  100% {
+    background-color: blueviolet;
+  }
+}
+
+#bounce {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(206, 63, 87);
+  border-radius: 50%;
+
+  animation: bounce 0.5s linear 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 300px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
