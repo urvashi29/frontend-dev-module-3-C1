@@ -1,0 +1,42 @@
+#media {
+  background-color: yellow;
+}
+
+/* @rule medi-type operator (condition) {
+
+} */
+
+/* 0 till 400px (mobile phones) */
+@media screen and (max-width: 400px) {
+  #media {
+    background-color: aquamarine;
+  }
+}
+
+/* 600px & above (tables, large) */
+@media screen and (min-width: 600px) {
+  #media {
+    background-color: paleturquoise;
+  }
+}
+
+/* 768px & above */
+@media screen and (min-width: 768px) {
+  #media {
+    background-color: orange;
+  }
+}
+
+/* large tables/ ipad */
+@media screen and (min-width: 900px) {
+  #media {
+    background-color: brown;
+  }
+}
+
+/* desktop/laptop */
+@media screen and (min-width: 1200px) {
+  #media {
+    background-color: olive;
+  }
+}
