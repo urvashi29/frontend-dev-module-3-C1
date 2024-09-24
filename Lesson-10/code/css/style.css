@@ -1,0 +1,10 @@
+#sample {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    box-shadow: 2px 2px 3px blue;
+}
+
+@keyframes sample {
+    
+}
