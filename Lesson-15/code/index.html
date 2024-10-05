@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+
+    <style>
+      p:first-child {
+        background-color: yellow;
+      }
+
+      /* p is present as second child */
+      p:nth-child(2) {
+        background-color: aquamarine;
+      }
+
+      p:nth-child(3) {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p onmousedown="alert('Mouse Down!')">Hello</p>
+    <p onmouseenter="alert('Mouse Entered!')">world</p>
+    <p onmouseover="alert('Mouse Over!')">lorem</p> -->
+
+    <!-- form events -->
+    <form id="form">
+      <label>FirstName</label>
+      <input type="text" placeholder="Please enter name" id="name" value="" />
+
+      <input
+        type="text"
+        placeholder="Please enter age"
+        id="age"
+        onchange="changeInput()"
+      />
+      <input
+        type="text"
+        placeholder="Please enter number"
+        id="number"
+        onkeyup="keyUp()"
+      />
+
+      <input type="email" placeholder="Please enter email" id="email" />
+
+      <input type="email" placeholder="Please enter email" id="email-address" />
+
+      <button>Submit</button>
+    </form>
+
+    <p id="submitted"></p>
+
+    <button onclick="displayClicked()">Click Me!</button>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!-- Task
+create a form: name, age, email, salary. onsubmitted displayed the user -->
