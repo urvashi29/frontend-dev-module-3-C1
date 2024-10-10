@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+
+    <style>
+      #grandparent,
+      #parent,
+      #child {
+        text-align: center;
+        border: 2px solid black;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <!-- <body onload="setTimeout(() => {alert('Hello World!')}, 2000)"> -->
+  <body>
+    <div id="grandparent" style="background-color: pink">
+      GrandParent
+      <div id="parent" style="background-color: orange">
+        Parent
+        <div id="child" style="background-color: green">Child</div>
+      </div>
+    </div>
+
+    <div id="delegate">
+      <button>1</button>
+      <button>2</button>
+    </div>
+
+    <ul id="list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+<!-- onload: It fire whenever a page is loaded. iframe, video, body -->
