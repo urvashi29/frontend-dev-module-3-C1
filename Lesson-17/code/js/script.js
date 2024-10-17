@@ -113,17 +113,21 @@ $(document).ready(function () {
   // click event using click() method
   $("#effect").click(function () {
     // hide() & show() & toggle()
-    // $("#test").hide(2000); //2000 ms
-    // $("#sample").show(1000);
+    // $("#test").hide(2000, function () {}); //2000 ms
+    // $("#sample").show(1000, function () {});
 
     // fadeIn(): visible the element with fading effect, fadeOut(): hide the element, fadeToggle()
-    // $("#test").fadeOut("slow");
-    // $("#test").fadeOut(2000);
-    // $("#sample").fadeIn(1000);
+    // $("#test").fadeOut("slow", function() {});
+    // $("#test").fadeOut(2000, function(){});
+    // $("#sample").fadeIn(1000, function () {});
 
     // slideUp: hide the element & slideDown: visible the element, slideToggle()
-    $("#test").slideUp(2000);
-    $("#sample").slideDown(1000);
+    // $("#test").slideUp(2000);
+    $("#sample")
+      .delay(2000)
+      .slideDown(1000, function () {
+        alert("Sliding Down!");
+      });
   });
 });
 
@@ -157,4 +161,17 @@ $(document).ready(function () {
   $("img").width("100px");
   $("img").height("100px");
 });
+
+//animate
+$(document).ready(function () {
+  $("#box").click(function () {
+    $("#animate").animate({
+      opacity: "0.5",
+      height: "200px",
+      width: "200px",
+      padding: "20px"
+    });
+  });
+});
+
 
