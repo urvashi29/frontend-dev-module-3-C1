@@ -32,10 +32,10 @@ debounce = (func, delay) => {
 
 debounce("hello", 2000);
 
-const debounceFun = throttle("apiCall", 2000); //logic, delay
+const debounceFun = debounce("apiCall", 2000); //logic, delay
 
 document.querySelector("#age").addEventListener("keyup", debounceFun);
 
 for (let i = 0; i < 10; i++) {
-  console.log(i);
+  // console.log(i);
 }
