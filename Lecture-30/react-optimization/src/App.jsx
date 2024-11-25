@@ -7,10 +7,10 @@ import User from "./pages/User";
 const App = () => {
   return (
     <>
-      <Memo />
-      <Callback />
+      {/* <Memo /> */}
+      {/* <Callback /> */}
       {/* <Search /> */}
-      {/* <User /> */}
+      <User />
     </>
   );
 };

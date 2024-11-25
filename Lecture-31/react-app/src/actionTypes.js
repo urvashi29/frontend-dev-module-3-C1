@@ -1,0 +1,3 @@
+export const GET_USERS = "GET_USERS";
+export const CREATE_EMPLOYEE = "CREATE_EMPLOYEE";
+export const DELETE_EMPLOYEE = "DELETE_EMPLOYEE";
