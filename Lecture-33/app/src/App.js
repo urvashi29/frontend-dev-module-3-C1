@@ -1,10 +1,10 @@
 import React from "react";
-import Router from "./Router";
+import SuspensePost from "./SuspensePost";
 
 const App = () => {
   return (
     <>
-      <Router />
+      <SuspensePost />
     </>
   );
 };
