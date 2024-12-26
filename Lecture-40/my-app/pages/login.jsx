@@ -19,7 +19,7 @@ const login = () => {
       });
 
       console.log(res.json());
-      router.push("/");
+      router.push("/");//Home component
 
       //   console.log("calling login api from here");
     } catch (err) {
